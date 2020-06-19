@@ -1,11 +1,72 @@
+*{
+    font-size: 0.99em;
+}
+
+.highlight-posts{
+    margin: 5vw;
+}
+
+.post-title {
+    justify-content: center;
+    display: inline-block;
+
+}
+
+.section-title{
+    display: flex;
+    justify-content: center;
+} 
+
+span.line{
+    display: inline-block;
+}
+
+.left{
+    display: flex;
+}
+
+.side-bar{
+    width: 25vw;
+}
+
+.margin-10{
+    margin: 10px;
+}
+
+#orange-btn-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
 .subtitle {
     justify-content: center;
     display: flex;
 }
 
-.main-title{
+.orange-btn:hover{
+    background-color: lightsalmon;
+}
+
+p{
+    font-size: 2
+}
+
+.orange-btn{
+    display: flex;
+    justify-items: center;
+    background-color: salmon;
+    color: white;
+}
+
+@font-face{
+    font-family: 'myFirstFont';
+    src: "C:\code\projects\remock-gabesequeira\public\portica_regular_typeface.ttf"
+}
+
+.main-title {
     display: flex;
     justify-content: center;
+    font-family: 'myFirstFont';
 }
 
 
@@ -30,7 +91,7 @@ body {
 }
 
 .content-width{
-    width: 60%;
+    width: 65%;
     /* min-width: 700px; */
 }
 
@@ -46,29 +107,51 @@ body {
 }
 
 .image{
+    padding: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
+    background-size: contain;
+}
+
+.img-title{
+    display: flex;
+    justify-content: center;
 }
 
 .gray-border {
     border: 5px solid gray;
 }
 
+.form-inputs{
+    width: 30vw;
+}
+
+#footer-content{
+    background-color: lightgrey;
+}
+
 #page-break {
+    display:flex;
+    justify-content: center;
     margin: 20px 0px;
     width: 100%;
-    height: 200px;
+    height: 100px;
     background-color: burlywood;
+
 }
 
 #main{
-    background-color: chartreuse;
+    background-color: rgb(80, 122, 46);
     display: flex;
     justify-content: space-around;
 }
 
 .content{
     width: 75%;
+}
+
+.message-input{
+    resize: none;
 }
 
 @media (max-width:768px) {
