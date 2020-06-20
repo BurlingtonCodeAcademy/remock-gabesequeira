@@ -1,5 +1,9 @@
+body,html{
+    font-family: "Alegreya Sans Sc", sans-serif
+}
+
 *{
-    font-size: 0.99em;
+
 }
 
 .highlight-posts{
@@ -48,7 +52,14 @@ span.line{
 }
 
 p{
-    font-size: 2
+    font-size: 10px;
+    font-family: 'Times New Roman', Times, serif
+}
+
+p.main-title{
+    text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
+    font-size: 35px;
+    color:#ff6500
 }
 
 .orange-btn{
@@ -60,15 +71,19 @@ p{
 
 @font-face{
     font-family: 'myFirstFont';
-    src: "C:\code\projects\remock-gabesequeira\public\portica_regular_typeface.ttf"
+    src: url("C:\code\projects\remock-gabesequeira\public\portica_regular_typeface.ttf");
+}
+
+#name-email {
+    display: flex;
+    flex-direction: row;
 }
 
 .main-title {
     display: flex;
     justify-content: center;
-    font-family: 'myFirstFont';
+    font-family: "Alegreya Sans Sc", sans-serif
 }
-
 
 #features {
     display: flex;
@@ -76,10 +91,24 @@ p{
 }
 
 body {
-    background-color: brown;
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#text{
+
+}
+
+#questions{
+    display: flex;
+    justify-content: center;
+}
+
+#footer-content{
+    background-color: lightgrey;
+    width: calc(100%);
 }
 
 #header {
@@ -88,6 +117,25 @@ body {
 
 #features {
     background-color: blueviolet;
+}
+
+#name{
+    width: 8em;
+    margin: .05em;
+}
+
+#email{
+    width: 8em;
+    margin: .05em;
+}
+
+.form-inputs{
+    width: 20.5em;
+}
+
+.message-input{
+    resize: none;
+    width: 17em;
 }
 
 .content-width{
@@ -122,14 +170,6 @@ body {
     border: 5px solid gray;
 }
 
-.form-inputs{
-    width: 30vw;
-}
-
-#footer-content{
-    background-color: lightgrey;
-}
-
 #page-break {
     display:flex;
     justify-content: center;
@@ -137,7 +177,7 @@ body {
     width: 100%;
     height: 100px;
     background-color: burlywood;
-
+    color: white
 }
 
 #main{
@@ -148,10 +188,6 @@ body {
 
 .content{
     width: 75%;
-}
-
-.message-input{
-    resize: none;
 }
 
 @media (max-width:768px) {
