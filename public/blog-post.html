@@ -10,18 +10,18 @@
   <body>
     <div style="display: flex;">
     <section id="header" class="content-width">
+    </div>
       <br>
       <div>
       <a target="_blank" href="index.html" style="text-decoration: none;">
       <h1 class="main-title">post only</h1></a>
-      <h6 class="subtitle">A page with just a blog post content.</h6>
+      <h6 class="subtitle" style="position: relative; bottom: -10px;">A page with just a blog post content.</h6>
       <br>
       <hr>
       <hr style="margin-top: -6px;">
     </section>
-    <br>
-    <section id="main" class="content-width">
-      <div class="content">
+    <section id="main" class="content-width" style="display: grid;">
+      <div class="content" style="position: relative">
         <p class="post-title">
           <span class="line" style="font-family: Alegreya sans sc, sans-serif; font-size: 15px;">
           <p style="font-family: Alegreya sans sc; font-size: 18px;">  Welcome to the <b>blog post page</b> layout</p>
@@ -65,9 +65,10 @@
         </div>
       </div>
     </div>
-      
+    <br>
+    <br>
     <section id="footer">
-      <div id="footer-content">
+      <div id="footer-content" style="column-width: 100vw;">
         <div id="questions">
           <h3>Questions or comments? Get in touch:</h3>
         </div>
@@ -94,51 +95,51 @@
                 soluta? Blanditiis, veniam enim! Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
             </div>
-            <div id="contact-links" style="margin-top: 5px;">
-              <div id="left-contacts" style="float: center;">
-                <div class="contact">
+            <div id="contact-links" style="display: flex;">
+              <div id="left-contacts">
+                <div class="contact" style="margin-top: 15px;">
                   <div class="contact-img-wrapper">
                     <img class='icon' src="footerlink-home.png" />
                   </div>
-                  <p id="small-font">1234 Somewhere Road,<br>Burlington, VT 00000<br>USA</p>
+                  <p style="display: grid;" id="small-font">1234 Somewhere Road,<br>Burlington, VT 00000<br>USA</p>
                 </div>
-                <div class="contact" style="display: flex; flex-direction: flex-start;">
-                  <div class="contact-img-wrapper">
+                <div class="contact">
+                  <div class="contact-img-wrapper" style="margin-top: 20px">
                     <img src="footerlink-phone.png" class="icon" />
                   </div>
-                  <p id="small-font">(000)000-0000</p>
+                  <p id="small-font" style="margin-bottom: 20px; position: relative; top: -10px">(000)000-0000</p>
                 </div>
-                <div class="contact" style="display: flex; flex-direction: flex-start;">
-                  <div class="contact-img-wrapper">
+                <div class="contact" style="display: flex;">
+                  <div class="contact-img-wrapper" style="position: relative; top: -10px;">
                     <img src="footerlink-email.png" class='icon' />
                   </div>
-                  <p id="small-font">info@untitled.tld</p>
+                  <p id="small-font" style="position: relative; top: -20px;">info@untitled.tld</p>
                 </div>
               </div>
-              <div id="right-contacts">
+              <div id="right-contacts" style="position: relative; bottom: -10px;">
                 <div class="contact">
                   <div class="contact-img-wrapper">
                     <img class="icon" src="footerlink-twitter.png"/>
                   </div>
-                  <p id="small-font">@untitled</p>
+                  <p style="display: grid; position: relative; top: -2px;" id="small-font">@untitled</p>
                 </div>
                 <div class="contact">
                   <div class="contact-img-wrapper">
                     <img class="icon" src="footerlink-instagram.png"/>
                   </div>
-                  <p id="small-font">instagram.com</p>
+                  <p id="small-font" style="display: grid; position: relative; bottom: -2px;">instagram.com</p>
                 </div>
                 <div class="contact">
                   <div class="contact-img-wrapper">
                     <img class="icon" src="footerlink-dribbble.png"/>
                   </div>
-                  <p id="small-font">dribbble.com</p>
+                  <p id="small-font" style="display: grid; position: relative; bottom: -3px;">dribbble.com</p>
                 </div>
                 <div class="contact">
                   <div class="contact-img-wrapper">
                     <img class="icon" src="footerlink-facebook.png"/>
                   </div>
-                  <p id="small-font">facebook.com</p>
+                  <p id="small-font" style="display: grid; position: relative; bottom: -5px;">facebook.com</p>
                 </div>
               </div>
             </div>

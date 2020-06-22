@@ -103,16 +103,6 @@ span.line{
     color: white;
 }
 
-.gray-btn:hover{
-    cursor: pointer;
-    background-color: black;
-}
-
-.orange-btn:hover{
-    background-color: lightsalmon;
-    cursor: pointer;
-}
-
 p{
     font-size: 10px;
     font-family: 'Times New Roman', Times, serif
@@ -155,6 +145,8 @@ button{
 }
 
 .orange-btn{
+    border-style: none;
+    outline-style: none;
     background-color: salmon;
     color: white;
     font-family: "Alegreya sans sc", serif;
@@ -164,7 +156,7 @@ button{
     width: 100px;
     padding: 0px;
     text-align: center;
-    margin: auto;
+    margin: 15px;
 }
 
 .gray-btn{
@@ -172,6 +164,16 @@ button{
     background-color: #676767;
     font-family: "Alegreya sans sc", sans-serif;
     font-size: 12px;
+}
+
+.gray-btn:hover{
+    cursor: pointer;
+    background-color: black;
+}
+
+.orange-btn:hover{
+    background-color: lightsalmon;
+    cursor: pointer;
 }
 
 #name-email {
@@ -253,10 +255,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 500px;
-}
-
-#features {
-    background-color: blueviolet;
 }
 
 .content-width{
