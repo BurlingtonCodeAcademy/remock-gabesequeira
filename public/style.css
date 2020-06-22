@@ -157,6 +157,7 @@ button{
     padding: 0px;
     text-align: center;
     margin: 15px;
+    line-height: 2.5em;
 }
 
 .gray-btn{
