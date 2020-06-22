@@ -5,9 +5,34 @@ body,html{
     justify-content: center;
 }
 
+#header {
+    width: 100%;
+}
+
 #text{
     display: flex;
     justify-content: start;
+}
+
+#page-break {
+    display:flex;
+    justify-content: center;
+    margin: 20px 0px;
+    width: 100%;
+    height: 100px;
+    background-color: burlywood;
+    color: white
+}
+
+#main{
+
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.content{
+    width: 100%;
 }
 
 .highlight-posts{
@@ -59,6 +84,7 @@ span.line{
 
 #small-font{
     font-size: 8px;
+    display: inline-block;
 }
 
 .icon{
@@ -77,8 +103,14 @@ span.line{
     color: white;
 }
 
+.gray-btn:hover{
+    cursor: pointer;
+    background-color: black;
+}
+
 .orange-btn:hover{
     background-color: lightsalmon;
+    cursor: pointer;
 }
 
 p{
@@ -90,7 +122,19 @@ h1.main-title{
     text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
     font-size: 35px;
     color:#ff6500;
-    letter-spacing: 2px; 
+    letter-spacing: 2px;
+}
+
+h1.main-title:hover{
+    color: blue
+}
+
+.sidebar-titles:hover{
+    color: red;
+}
+
+a:link{
+    color: A9A9A9;
 }
 
 .subtitle {
@@ -108,10 +152,6 @@ button{
     box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
     margin-left: auto;
     margin-right: auto;
-}
-
-#contact-email{
-    margin-left: -30px;
 }
 
 .orange-btn{
@@ -137,6 +177,33 @@ button{
 #name-email {
     display: flex;
     flex-direction: row;
+}
+
+#name{
+    width: 8em;
+    margin: .05em;
+}
+
+#email{
+    width: 8em;
+    margin: .05em;
+}
+
+.name-email-input:focus::placeholder{
+    color: white;
+}
+
+.message-input::placeholder{
+   font-family: Arial, Helvetica, sans-serif
+}
+
+.message-input:focus::placeholder{
+   color: white;
+}
+
+.message-input{
+    resize: none;
+    width: 17em;
 }
 
 .main-title {
@@ -176,44 +243,20 @@ body {
 }
 
 #footer-contact-info{
-    display: grid;
-
+    display: flex;
+    flex-direction: column;
 }
 
-#header {
-    background-color: aqua;
-    width: 100%;
+#footer-lower{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
 }
 
 #features {
     background-color: blueviolet;
-}
-
-.name-email-input:focus::placeholder{
-     color: white;
-}
-
-.message-input::placeholder{
-    font-family: Arial, Helvetica, sans-serif
-}
-
-.message-input:focus::placeholder{
-    color: white;
-}
-
-#name{
-    width: 8em;
-    margin: .05em;
-}
-
-#email{
-    width: 8em;
-    margin: .05em;
-}
-
-.message-input{
-    resize: none;
-    width: 17em;
 }
 
 .content-width{
@@ -252,27 +295,6 @@ body {
     border: 5px solid gray;
 }
 
-#page-break {
-    display:flex;
-    justify-content: center;
-    margin: 20px 0px;
-    width: 100%;
-    height: 100px;
-    background-color: burlywood;
-    color: white
-}
-
-#main{
-    background-color: rgb(80, 122, 46);
-    display: flex;
-    justify-content: space-around;
-    margin: auto;
-}
-
-.content{
-    width: 75%;
-}
-
 @media (max-width:768px) {
     #header, #features {
         width: 90vw;
@@ -284,12 +306,4 @@ body {
         display: flex;
         justify-content: center;
     }
-}
-
-#footer-lower{
-    display: flex;
-    flex-direction: row;
-    margin-left: auto;
-    margin-right: auto;
-    width: 500px;
 }
